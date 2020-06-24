@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <h1 class="header">Запрос коммерческого предложения</h1>
+    <div class="card">
+      <div class="personal">
+        <h2 class="personal-header">Контактные данные</h2>
+        <form action="#" class="personal-form" id="form">
+          <div class="wrapper">
+            <label for="name">Имя</label>
+            <input
+              class="name"
+              type="text"
+              required
+              placeholder="Ваше имя"
+              name="name"
+              value=""
+              id="name"
+            />
+            <div class="requirements">Введите ваше имя</div>
+          </div>
+          <div class="wrapper">
+            <label for="phone">Номер телефона</label>
+            <input
+              type="tel"
+              required
+              placeholder="+7"
+              name="phone"
+              value=""
+              id="phone"
+            />
+            <div class="requirements">Введите ваш телефон</div>
+          </div>
+          <div class="wrapper">
+            <label for="mail">Эл. почта</label>
+            <input
+              type="email"
+              required
+              placeholder="Ваш e-mail"
+              name="mail"
+              value=""
+              id="mail"
+            />
+            <div class="requirements">Введите вашу почту</div>
+          </div>
+        </form>
+      </div>
+      <hr />
+      <div class="building">
+        <h2 class="building-header">Тип здания</h2>
+        <form action="#" class="building-form">
+          <div class="wrapper wrapper-first">
+            <div class="item">
+              <input
+                class="radio"
+                type="radio"
+                name="buildingType"
+                value="mall"
+                id="mall"
+                checked
+              />
+              <label for="mall">Торговые центры</label>
+            </div>
+            <div class="item">
+              <input
+                class="radio"
+                type="radio"
+                name="buildingType"
+                value="indastrial"
+                id="indastrial"
+              />
+              <label for="indastrial">Промышленные объекты</label>
+            </div>
+            <div class="item">
+              <input
+                class="radio"
+                type="radio"
+                name="buildingType"
+                value="office"
+                id="office"
+              />
+              <label for="office">Офисные здания</label>
+            </div>
+          </div>
+          <div class="wrapper wrapper-second">
+            <div class="item">
+              <input
+                class="radio"
+                type="radio"
+                name="buildingType"
+                value="hotel"
+                id="hotel"
+              />
+              <label for="hotel">Гостиницы</label>
+            </div>
+            <div class="item">
+              <input
+                class="radio"
+                type="radio"
+                name="buildingType"
+                value="social"
+                id="social"
+              />
+              <label for="social">Социальные объекты</label>
+            </div>
+            <div class="item">
+              <input
+                class="radio"
+                type="radio"
+                name="buildingType"
+                value="apartment"
+                id="apartment"
+              />
+              <label for="apartment">Многоквартирный дом</label>
+            </div>
+          </div>
+          <div class="wrapper wrapper-square">
+            <label for="square">Площадь, кв. м</label>
+            <input
+              type="number"
+              name="square"
+              value=""
+              required
+              id="square"
+              placeholder="Площадь здания"
+            />
+          </div>
+        </form>
+      </div>
+      <hr />
+      <div class="work">
+        <h2 class="work-header">Виды работ</h2>
+        <form action="#" class="work-form">
+          <div class="wrapper">
+            <div class="item">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ventilation"
+                value="yes"
+                id="ventilation"
+                checked
+              />
+              <label for="ventilation">Ветиляция</label>
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="heating"
+                value="yes"
+                id="heating"
+              />
+              <label for="heating">Отопление</label>
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="fireSatefy"
+                value="yes"
+                id="fireSatefy"
+              />
+              <label for="fireSatefy">Пожарная безопасность</label>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="item">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="Conditioning"
+                value="yes"
+                id="Conditioning"
+              />
+              <label for="Conditioning">Кондиционирование</label>
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="sewerage"
+                value="yes"
+                id="sewerage"
+              />
+              <label for="sewerage">Водопровод и канализация</label>
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="system"
+                value="yes"
+                id="system"
+              />
+              <label for="system">Слаботочные системы</label>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="item">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="electr"
+                value="yes"
+                id="electr"
+              />
+              <label for="electr">Электроснабжение</label>
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="rSewerage"
+                value="yes"
+                id="rSewerage"
+              />
+              <label for="rSewerage">Ливневая канализация</label>
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="heatingPlace"
+                value="yes"
+                id="heatingPlace"
+              />
+              <label for="heatingPlace">Индивидуальный тепловой пункт</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <hr />
+      <form action="#" class="submit">
+        <div class="submitBtn">
+          <button type="submit" class="btn" form="form">
+            Отправить
+          </button>
+          <div class="submitBtn-descr">
+            Вы даете согласие на обработку <br />
+            <span>персональных данных</span>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment-descr">Дополнительная информация</div>
+          <textarea
+            name="comment"
+            placeholder="Комментарии и пожелания"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

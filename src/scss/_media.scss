@@ -1,0 +1,209 @@
+@media (max-width: 1024px) {
+  .card {
+    width: 930px;
+    .personal {
+      .personal-form {
+        .wrapper {
+          input {
+            width: 258px;
+          }
+        }
+      }
+    }
+    .building {
+      .building-form {
+        .wrapper-square {
+          input {
+            width: 258px;
+          }
+        }
+      }
+    }
+    .submit {
+      align-items: flex-start;
+      .comment {
+        textarea {
+          width: 402px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    font-size: 48px;
+  }
+  .card {
+    width: 690px;
+    .personal {
+      .personal-form {
+        flex-wrap: wrap;
+        .wrapper {
+          .name {
+            width: 594px;
+          }
+          input {
+            width: 290px;
+          }
+        }
+      }
+    }
+    .building {
+      .building-form {
+        flex-wrap: wrap;
+        .wrapper-square {
+          input {
+            width: 430px;
+          }
+        }
+      }
+    }
+    .work {
+      .work-form {
+        flex-wrap: wrap;
+      }
+    }
+    .submit {
+      align-items: flex-start;
+      .comment {
+        textarea {
+          width: 290px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .header {
+    font-size: 48px;
+  }
+  .card {
+    width: 510px;
+    .personal {
+      .personal-form {
+        flex-wrap: wrap;
+        .wrapper {
+          label {
+            margin-top: 11px;
+          }
+          .name {
+            width: 430px;
+          }
+          input {
+            width: 430px;
+          }
+        }
+      }
+    }
+    .building {
+      .building-form {
+        flex-wrap: wrap;
+        .wrapper-square {
+          input {
+            width: 430px;
+          }
+        }
+      }
+    }
+    .work {
+      .work-form {
+        flex-wrap: wrap;
+      }
+    }
+    .submit {
+      flex-wrap: wrap;
+      flex-flow: wrap-reverse;
+      .submitBtn {
+        display: flex;
+        margin-top: 32px;
+      }
+      .comment {
+        textarea {
+          width: 430px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    font-size: 30px;
+  }
+  .card {
+    width: 290px;
+    .personal {
+      padding: 30px 20px 40px 20px;
+      &-header {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+      }
+      .personal-form {
+        flex-wrap: wrap;
+        .wrapper {
+          label {
+            margin-top: 11px;
+          }
+          .name {
+            width: 242px;
+          }
+          input {
+            width: 242px;
+          }
+        }
+      }
+    }
+    .building {
+      padding: 30px 20px 40px 20px;
+      &-header {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+      }
+      .building-form {
+        flex-wrap: wrap;
+        .wrapper-square {
+          input {
+            width: 242px;
+          }
+        }
+      }
+    }
+    .work {
+      padding: 30px 20px 40px 20px;
+      &-header {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+      }
+      .work-form {
+        flex-wrap: wrap;
+      }
+    }
+    .submit {
+      padding: 30px 20px 40px 20px;
+      flex-wrap: wrap;
+      flex-flow: wrap-reverse;
+      .submitBtn {
+        &-descr {
+          text-align: center;
+        }
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        .btn {
+          width: 242px;
+        }
+      }
+      .comment {
+        &-descr {
+          text-align: center;
+        }
+        textarea {
+          width: 242px;
+        }
+      }
+    }
+  }
+}
